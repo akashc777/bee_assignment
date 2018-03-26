@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.beeassignment.MainActivity">
+
+
+
+
+
+    <EditText
+        android:id="@+id/R"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Resistance"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/C"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Capacitance"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/L"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Inductance"
+        android:inputType="text" />
+
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:onClick="submit"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_light"
+            android:text="Power"
+            android:paddingLeft="6dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="Current"
+            android:paddingLeft="6dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_blue_dark"
+            android:text="Voltage"
+            android:paddingLeft="6dp"/>
+
+    </LinearLayout>
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
